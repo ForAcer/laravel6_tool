@@ -114,6 +114,7 @@
         .layui-form-item{margin-bottom:0px;}
     </style>
     <script>
+        let csrf_token = '{{csrf_token()}}';
 		layui.config({
 			base: BASE_URL //静态资源所在路径
 		}).extend({
@@ -124,19 +125,19 @@
 			//提交
 			form.on('submit(LAY-user-login-submit)', function(obj){
 				$.ajax({
-					url: SITE_URL + '/hradmin/menu/savemenu'
+					url: "{{route('admin.menu.savemenu')}}"
 					,data: obj.field
 					,type:'post'
 					,dataType:'json'
 					,headers:{
-						'X-CSRF-TOKEN': '{{csrf_token()}}'
+						'X-CSRF-TOKEN': csrf_token
 					}
 					,success: function(res){
 						if(res.code == 200)
 						{
 							layer.msg(res.msg, {icon: 1});
 							setInterval(function(){
-								window.location.href = SITE_URL + '/hradmin/menu/index';
+								window.location.href = "{{route('admin.menu.index')}}";
 							}, 1000);
 						}
 						else

@@ -81,7 +81,7 @@ class GroupController extends BaseAdminController
 		//获取本角色可以操作得菜单
 		if(!empty($groupId))
 		{
-			array_push($where, ['group_id', '=', $groupId]);
+			array_push($where, ['role_id', '=', $groupId]);
 			$adminMenuList = DB::table('admin_menu')->where($where)->get();
 			$adminMenuIds = Helpers::getSubValueObj($adminMenuList, 'menu_id');
 			$selectedIds = array_diff($adminMenuIds, $parentIds);
@@ -177,7 +177,7 @@ class GroupController extends BaseAdminController
 			}
 
 			//删除之前选择得菜单
-			$deleteAdminMenuResult = DB::table('admin_menu')->where('group_id', $groupId)->delete();
+			$deleteAdminMenuResult = DB::table('admin_menu')->where('role_id', $groupId)->delete();
 			if($deleteAdminMenuResult === false)
 			{
 				DB::rollBack();
@@ -191,7 +191,7 @@ class GroupController extends BaseAdminController
 			$insertTime = time();
 			foreach ($selectedIds as $value)
 			{
-				array_push($adminMenuInsert, ['group_id' => $groupId, 'menu_id' => $value, 'ctime' => $insertTime, 'is_del' => 1]);
+				array_push($adminMenuInsert, ['role_id' => $groupId, 'menu_id' => $value, 'ctime' => $insertTime, 'is_del' => 1]);
 			}
 
 			$insertResult = DB::table('admin_menu')->insert($adminMenuInsert);

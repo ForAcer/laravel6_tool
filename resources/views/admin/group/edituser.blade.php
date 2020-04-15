@@ -31,7 +31,7 @@
                                             <option value="">选择角色</option>
                                             @if(!empty($groupList) && count($groupList) > 0)
                                                 @foreach($groupList as $cv)
-                                                    <option @if(!empty($adminInfo) && $cv->id == $adminInfo->group_id) selected @endif value="{{$cv->id}}">{{$cv->name}}</option>
+                                                    <option @if(!empty($adminInfo) && $cv->id == $adminInfo->role_id) selected @endif value="{{$cv->id}}">{{$cv->name}}</option>
                                                 @endforeach
                                             @endif
                                         </select>
