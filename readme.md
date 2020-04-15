@@ -23,3 +23,5 @@
 1、中间件中含有api和admin的判断，api分版本使用，config/service_url.php 为第三方服务url配置
 
 2、已经附带RBAC权限管理，其他功能暂未添加
+
+3、php7.2版本要求，有开启opcache扩展
