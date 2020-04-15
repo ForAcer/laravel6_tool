@@ -1,14 +1,3 @@
-<?php
-
-/**
- * @author : liuxinhui
- * @email : liuxinhui@haiwang.link
- * @time : 2020/4/15 9:32
- * @company : 深圳海王集团股份有限公司
- * @web : https://www.neptunus.com
- */
-
-?>
 @extends('layouts.login_common')
 @section('content')
     <div class="layadmin-user-login layadmin-user-display-show" id="LAY-user-login" style="display: none;">

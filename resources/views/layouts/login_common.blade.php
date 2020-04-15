@@ -1,14 +1,3 @@
-<?php
-
-/**
- * @author : liuxinhui
- * @email : liuxinhui@haiwang.link
- * @time : 2020/4/15 9:36
- * @company : 深圳海王集团股份有限公司
- * @web : https://www.neptunus.com
- */
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,14 +15,6 @@
 		const SITE_URL = '{{$SITE_URL}}';
 		const hwObj = new HW();
 		const BASE_URL = SITE_URL + '/static/common/';
-    </script>
-    <script>
-		/**
-		 * @author : liuxinhui
-		 * @email : liuxinhui@haiwang.link
-		 * @company : 深圳海王集团股份有限公司
-		 * @web : https://www.neptunus.com
-		 */
     </script>
 </head>
 <body>
