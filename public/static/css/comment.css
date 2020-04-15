@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.article-content{width:100%;height:auto;overflow: hidden;}
+.article-content p{width:100%;font-size:14px;line-height:23px;text-indent: 0em;}
+.article-content img{width:auto;max-width:100%;height:auto;}
+.layui-input-block{margin:0px;}
+.layui-text ul li{list-style:none;}
+.detail-content-btn{text-align: center;}
+.detail-content-btn li{display:inline-block;width:50px;margin-right:20px; height:50px;border-radius: 100%;border:2px solid #38403f;cursor: pointer;line-height:50px;}
+.detail-content-btn li i{font-size:26px;}
+.detail-content-btn li.on{background: #1E9FFF;border-color: #1E9FFF;}
+.detail-content-btn li.on i{color:#fff;}
+.message-content{padding:0px;}
+.message-text{padding:0px;}
+.message-content .media-body{margin-bottom:10px;padding-bottom:10px;border-bottom: 1px dashed #e2e2e2;}
+.layadmin-homepage-list-imgtxt .media-body .min-font{margin-bottom:0px;}
+.comment-list-btn a{height: 22px;  line-height: 22px;  padding: 0 5px;  font-size: 12px;}
+.child-comment-area{border-radius:5px;margin:10px;padding:10px;overflow: hidden;background: #f2f2f2;}
+.child-comment-item {margin-bottom:5px;}
+.child-comment-item p{margin-left:5px;}
+.child-comment-item p i{color:#337ab7;font-weight: 600;font-style: normal;}
+
+.comment-set-btn span{display: block;margin-right:10px;float:left;}
+.comment-set-btn span.status_1{color:#2F4056;}
+.comment-set-btn span.status_2{color:#FF5722;}
+.comment-set-btn span.status_3{color:#1E9FFF;}
+.comment-set-btn p{float:right;margin-left:10px;font-size:12px;
+    cursor: pointer;}
+.comment-set-btn p.point{font-size:20px;}
+.comment-set-btn p:hover{color:#1E9FFF;}
+.comment-item-body{overflow:hidden;height:auto;padding:0 10px 10px 10px;margin-bottom:10px;border-bottom:1px dashed #e1e1e8;box-shadow: 0px 5px 10px #eee;}
+.item-header{width:100%;height:auto;}
+.comment-user {width:100%;overflow: hidden;margin-bottom:10px;}
+.comment-user div{float:left;}
+.comment-user .user-head img{float:left;width:40px;height:40px;border-radius: 100%;}
+.comment-user .user-name {float:left;line-height:40px;font-size:14px;color:#1E9FFF;
+    font-weight:600;margin-left:10px;}
+.comment-user .user-type{float:left;margin-left:10px;line-height:40px;}
+.item-content{margin:15px;padding:20px 15px;overflow: hidden;  background: #f2f2f2;border-radius: 5px;}
+.comment-article a{color:#000;}
+.comment-article a:hover{color:#1E9FFF;}
