@@ -18,6 +18,8 @@
 
 5、其他与laravel开发方式一样
 
+6、后台地址查看route/admin.php路由文件，帐号密码 admin admin888
+
 ### 关于其他
 
 1、中间件中含有api和admin的判断，api分版本使用，config/service_url.php 为第三方服务url配置
